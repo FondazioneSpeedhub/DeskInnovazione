@@ -181,4 +181,76 @@
       <label><input type="checkbox" name="inv_tech" value="BigData" /> Big Data &amp; Analytics</label>
       <label><input type="checkbox" name="inv_tech" value="Cloud" /> Cloud Computing</label>
       <label><input type="checkbox" name="inv_tech" value="Robotica" /> Robotica avanzata</label>
-      <label><input type="checkbox
+      <label><input type="checkbox" name="inv_tech" value="Additive" /> Additive Manufacturing</label>
+      <label><input type="checkbox" name="inv_tech" value="ARVR" /> Realtà Aumentata/Virtuale</label>
+      <label><input type="checkbox" name="inv_tech" value="Blockchain" /> Blockchain</label>
+      <label><input type="checkbox" name="inv_tech" value="Cybersecurity" /> Cybersecurity</label>
+      <label><input type="checkbox" id="inv-tech-other" onchange="toggleAltOther(this,'inv-tech-other-txt')" /> Altro</label>
+      <input type="text" id="inv-tech-other-txt" class="hidden" placeholder="Specifica…" />
+    </fieldset>
+
+    <label>Stato attuale</label>
+    <select name="stato">
+      <option>Idea </option>
+      <option>Analisi fattibilità</option>
+      <option>Preventivo ricevuto</option>
+      <option>In corso</option>
+    </select>
+
+    <label>Budget Stimato (€)</label>
+    <input type="number" name="inv_budget" />
+
+    <label>Finanziamento previsto/da valutare (seleziona una o più opzioni)</label>
+    <fieldset>
+      <label><input type="checkbox" name="inv_fin" value="Capitale proprio" /> Capitale proprio</label>
+      <label><input type="checkbox" name="inv_fin" value="Leasing/Finanziamento" /> Leasing/Finanziamento</label>
+      <label><input type="checkbox" id="inv-fin-other" onchange="toggleAltOther(this,'inv-fin-other-txt')" /> Altro</label>
+      <input type="text" id="inv-fin-other-txt" class="hidden" placeholder="Specifica…" />
+    </fieldset>
+
+    <label>Di cosa hai bisogno dal Desk? Descrivi la tua esigenza</label>
+    <textarea name="fin_esigenza"></textarea>
+  </section>
+
+<!-- SEZIONE SVILUPPO DEL CAPITALE UMANO -->
+  <section id="sez-cap" class="hidden">
+    <h2>Sezione Sviluppo del capitale umano</h2>
+
+    <label>Competenze da sviluppare (seleziona una o più opzioni)</label>
+    <fieldset>
+      <label><input type="checkbox" name="cap_tipo" value="Digitali" /> Competenze Digitali</label>
+      <label><input type="checkbox" name="cap_tipo" value="Cybersecurity" /> Cybersecurity</label>
+      <label><input type="checkbox" name="inv_tipo" value="Soft skills" /> Soft skills</label>
+      <label><input type="checkbox" name="inv_tipo" value="Green" /> Green</label>
+      <label><input type="checkbox" id="cap-tipo-other" onchange="toggleAltOther(this,'cap-tipo-other-txt')" /> Altro</label>
+      <input type="text" id="cap-tipo-other-txt" class="hidden" placeholder="Specifica…" />
+    </fieldset>
+
+    <label>Ruoli/profili coinvolti</label>
+    <input type="text" name="cap_profili" />
+
+     <label>N. persone da formare</label>
+    <input type="number" name="cap_numero" />
+
+    <label>Modalità formativa prevista (seleziona una o più opzioni)</label>
+    <fieldset>
+      <label><input type="checkbox" name="cap_tech" value="Corsi interni" /> Corsi interni</label>
+      <label><input type="checkbox" name="cap_tech" value="Academy esterne" /> Academy esterne</label>
+      <label><input type="checkbox" name="cap_tech" value="Coaching" /> Coaching</label>
+      <label><input type="checkbox" name="cap_tech" value="E-learing" /> E-learing</label>
+      <label><input type="checkbox" id="inv-tech-other" onchange="toggleAltOther(this,'inv-tech-other-txt')" /> Altro</label>
+      <input type="text" id="inv-tech-other-txt" class="hidden" placeholder="Specifica…" />
+    </fieldset>
+
+  
+    <label>Agevolazioni formazione d'interesse (seleziona una o più opzioni)</label>
+    <fieldset>
+      <label><input type="checkbox" name="cap_fin" value="Fondi interprofessionali" /> Fondi interprofessionali</label>
+      <label><input type="checkbox" name="cap_fin" value="Credito Formazione 4.0" /> Credito Formazione 4.0</label>
+      <label><input type="checkbox" name="cap_fin" value="nessuna" /> Nessuna</label>
+      </fieldset>
+
+    <label>Di cosa hai bisogno dal Desk? Descrivi la tua esigenza</label>
+    <textarea name="fin_esigenza"></textarea>
+  </section>
+        
